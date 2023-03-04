@@ -8,6 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Confidence-based Event-centric Online Video Question Answering on a Newly Constructed ATBS Dataset</title>
 
+  <!-- Mathjax CDN-->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
@@ -32,7 +41,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <!--link rel="icon" href=""-->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -117,9 +126,9 @@
             <div class="publication-links">
               
               <!-- PDF Link. -->
-              <!--
+             
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="#TODO"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -127,6 +136,7 @@
                   <span>Paper</span>
                 </a>
               </span>
+              <!--
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2011.12948"
                    class="external-link button is-normal is-rounded is-dark">
@@ -152,9 +162,8 @@
               -->
 
               <!-- Code Link. -->
-              <!--
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="#TODO"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -162,16 +171,15 @@
                   <span>Code</span>
                   </a>
               </span>
-              -->
 
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="#TODO"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>Dataset will be available upon the accept of the paper</span>
+                  <span>Dataset</span>
                   </a>
             </div>
 
@@ -249,21 +257,14 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">          
           <p>
-            Cross-modal learning of video and text plays a key role in
-            Video Question Answering (VideoQA), while insufficient
-            language supervision in domain knowledge often challenges
-            VideoQA models. In this paper, we propose a visual-text
-            attention mechanism to utilize the Contrastive Language-
-            Image Pre-training (CLIP) to guide the cross-modal learning
-            for VideoQA tasks. Specifically, the proposed method en-
-            codes video features using a TimeSformer and text features
-            via a BERT-based model, and another pair of vision-language
-            features with the support of general domain knowledge from
-            CLIP. Then, the attention information across visual and lin-
-            guistic features is extracted through a set of CLIP-guided
-            visual-text encoders and integrated to predict the answer. The
-            proposed method is evaluated on MSVD-QA and MSRVTT-
-            QA datasets. It outperforms state-of-the-art methods.
+            Deep neural networks facilitate video question answering (VideoQA), but the real-world applications on video streams
+            such as CCTV and live cast place higher demands on the solver. To address the challenges of VideoQA on long videos of
+            unknown length, we define a new set of problems called Online Open-ended Video Question Answering (O<sup>2</sup>VQA). It
+            requires an online state-updating mechanism for the solver to decide if the collected information is sufficient to
+            conclude an answer. We then propose a Confidence-based Event-centric Online Video Question Answering (CEO-VQA) model to
+            solve this problem. Furthermore, a dataset called Answer Target in Background Stream (ATBS) is constructed to evaluate
+            this newly developed online VideoQA application. Compared to the baseline VideoQA method that watches the whole video,
+            the experimental results show that the proposed method achieves a significant performance gain.
           </p>
         </div>
       </div>
@@ -295,14 +296,13 @@
         <div class="columns is-centered has-text-centered">
           <div class="column">
             <div class="publication-img">
-              <img id="architecture" src="static/images/Online Video QA Illustration.svg">
+              <img id="architecture" src="static/images/Online Video QA Illustration.png">
             </div>
           </div>
         </div>
         <p>
-          Illustration of the Online Open-ended Video Question Answering (O<sup>2</sup>VQA) task. 
-          For each frame, the solver calculates the confidence score for each of the feasible candidate answers 
-          and decides if the evidence is strong enough to give a confident answer.
+          Illustration of Online Open-ended Video Question Answering (O<sup>2</sup>VQA) task. 
+          For each frame, the solver derives the confidence score for each of the feasible candidate answers and decides if the evidence is sufficient to give a confident answer.
         </p>
     </div>
   </div>
@@ -337,11 +337,15 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Kong, Weikai and Ye, Shuhong and Chenglin, Yao and Jianfeng, Ren},
-  title     = {Confidence-based Event-centric Online Video Question Answering on a Newly Constructed ATBS Dataset},
-  year      = {2022},
-}</code></pre>
+    <pre><code>@inproceedings{kong2023confidence,
+      author    = {Kong, Weikai and Ye, Shuhong and Chenglin, Yao and Jianfeng, Ren},
+      title     = {Confidence-based Event-centric Online Video Question Answering on a Newly Constructed ATBS Dataset},
+      booktitle = {{IEEE} International Conference on Acoustics, Speech and Signal Processing, {ICASSP} 2023},
+      publisher = {{IEEE}},
+      year      = {2022},
+      doi = {},
+      url = {},
+    }</code></pre>
   </div>
 </section>
 
