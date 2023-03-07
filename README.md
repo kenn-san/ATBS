@@ -9,7 +9,7 @@ on a Newly Constructed ATBS(**A**nswer **T**arget in **B**ackground **S**tream) 
 ## Resources
 **[[Web](https://kenn-san.github.io/ATBS/)]** 
 **[[GoogleDrive(25G)](https://drive.google.com/drive/folders/1xO6KVUj2QLjZweqiXqIMRmuSjVjHuYOy?usp=sharing)]** 
-**[[Paper]()]** 
+**[[Paper](https://arxiv.org/abs/2303.03105)]** 
 
 ## Contact
 [Weikai Kong](scywk1@nottingham.edu.cn)
