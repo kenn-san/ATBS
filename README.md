@@ -12,6 +12,6 @@ on a Newly Constructed ATBS(**A**nswer **T**arget in **B**ackground **S**tream) 
 **[[Paper](https://arxiv.org/abs/2303.03105)]** 
 
 ## Contact
-[Weikai Kong](scywk1@nottingham.edu.cn)
+[Weikai Kong](https://github.com/WeikaiKong)
 
-[Shuhong Ye](scysy1@nottingham.edu.cn)
+[Shuhong Ye](https://github.com/kenn-san)
